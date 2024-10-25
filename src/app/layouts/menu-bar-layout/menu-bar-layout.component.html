@@ -1,0 +1,34 @@
+<div class="container-menu">
+    <div class="layout-menu">
+        <button class="btn-menu" (click)="toggleVisibility()">
+            <img class="menu" [src]="getIcon()" alt="Ressaca">
+        </button>
+    </div>
+    <div class="menu-list" [ngClass]="{'visible': isVisible}">
+        <button class="btn-menu-itens">
+            <img class="menu" src="assets/icons/home.svg" alt="Ressaca">
+            
+            <span>Home</span>
+        </button>
+        <button class="btn-menu-itens">
+            <img class="menu" src="assets/icons/hospital-24.png" alt="Ressaca">
+            <a routerLink="/saude">Login</a><br>
+            <span>Saúde</span>
+        </button>
+        <button class="btn-menu-itens">
+            <img class="menu" src="assets/icons/police-25.png" alt="Ressaca">
+            <span>Segurança</span>
+        </button>
+        <button class="btn-menu-itens">
+            <img class="menu" src="assets/icons/educação-24.png" alt="Ressaca">
+            <span>Educação</span>
+        </button>
+        <button class="btn-menu-itens">
+            <img class="menu" src="assets/icons/edifícios-da-cidade-24.png" alt="Ressaca">
+            <span>Infraestrutura</span>
+        </button>
+    </div>
+</div>
+<div style="margin-top: 70px; display: flex; justify-content: center; width: 100%;">
+    <ng-content></ng-content>
+</div>

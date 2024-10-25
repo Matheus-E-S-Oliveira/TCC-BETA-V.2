@@ -1,0 +1,11 @@
+<div class="btn-calendario-container"> 
+    <button class="btn-grafico-ant" (click)="prevMonth()">
+        <mat-icon>arrow_back_ios</mat-icon>
+    </button>
+    <div class="container-grafico">
+        <p-chart class="grafico" type="bar" [data]="data" [options]="options"></p-chart>
+    </div>
+    <button class="btn-grafico-prox" (click)="nextMonth()">
+        <mat-icon>arrow_forward_ios</mat-icon>
+    </button>
+</div>
