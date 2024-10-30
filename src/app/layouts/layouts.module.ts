@@ -18,6 +18,6 @@ import { LayoutComponent } from './layout/layout.component';
     CommonModule,
     LayoutsRoutingModule
   ],
-  exports: [MenuBarLayoutComponent]
+  exports: [LayoutComponent]
 })
 export class LayoutsModule { }

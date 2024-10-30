@@ -16,13 +16,15 @@ import { HomeRoutingModule } from './home-routing.module';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { GraficoTelasGrandesComponent } from './components/grafico-telas-grandes/grafico-telas-grandes.component';
 import { GraficoTelasPequenasComponent } from './components/grafico-telas-pequenas/grafico-telas-pequenas.component';
+import { CardComRotasComponent } from './components/card-com-rotas/card-com-rotas.component';
 
 
 @NgModule({
   declarations: [
     DashboardComponent,
     GraficoTelasGrandesComponent,
-    GraficoTelasPequenasComponent
+    GraficoTelasPequenasComponent,
+    CardComRotasComponent
   ],
   imports: [
     CommonModule,
@@ -33,7 +35,8 @@ import { GraficoTelasPequenasComponent } from './components/grafico-telas-pequen
     MatButtonModule,
     MatCardModule,
     MatIconModule,
-    RouterModule
-  ]
+    RouterModule,
+  ],
+  exports: [GraficoTelasGrandesComponent, GraficoTelasPequenasComponent]
 })
 export class HomeModule { }

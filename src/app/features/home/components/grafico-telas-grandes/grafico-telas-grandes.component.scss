@@ -1,0 +1,101 @@
+.container{
+    width: 100%;
+    display: flex;
+}
+.container-grafico {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 8px;
+    max-height: 200vh;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.grafico {
+    width: 100% !important;
+    
+}
+
+.btn-grafico-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:80%;
+    border-radius: 7px;
+    margin-bottom: 1%;
+    gap: 10px;
+    max-height: 200vh;
+}
+
+.btn-grafico-ant {
+    border-radius: 12px;
+    background: #ffffff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn-grafico-prox {
+    border-radius: 12px;
+    background: #ffffff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+.fundo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 6%;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f5f5fa;
+    border-radius: 20px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 20px;
+}
+.fundo-btn,
+.fundo-btn-prox{
+    width: 48%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1%;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f5f5fa;
+    border-radius: 20px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 10px;
+}
+.fundo-btn-prox{
+    border-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+@media (max-width: 1000px){
+    .fundo{
+        width: 100%;
+    }
+    .fundo-btn,.fundo-btn-prox{
+        width: 48%;
+    }
+    .btn-grafico-container{
+        width: 100% !important;
+    }
+    .container-grafico{
+        width: 100% !important;
+    }
+}

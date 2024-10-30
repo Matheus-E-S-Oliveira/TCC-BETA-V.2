@@ -1,0 +1,117 @@
+
+.body{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap;
+    margin-top: 3%;
+}
+
+.card-custom {
+    width: 100%;
+    padding: 9px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+/* Responsividade para telas menores */
+
+@media (max-width: 1031px) {
+    .fundo{
+        width: 48% !important;
+    }
+
+}
+@media (max-width: 768px) {
+    .fundo{
+        width: 100% !important;
+    }
+}
+
+mat-card {
+    width: 100%;
+    background-color: #ffffff;
+    border: none;
+    color: #474747;
+}
+
+.cabecalho-image {
+    background-image: src("assets/img/ressaquinha.jpg");
+    background-size: cover;
+    max-width: 58px;
+    align-items: baseline;
+    border-radius: 5px;
+    display: flex;
+    width: 100%;
+}
+
+.card-title {
+    font-size: 15px;
+    align-items: flex-start;
+    font-weight: 500;
+}
+
+.button-card {
+    width: 100%;
+    color: #4c4747;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    background: #ffffff;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 12px;
+    text-decoration: none;
+}
+.button-card:active{
+    background-color: #e0e0e0;
+}
+
+//customização do rating
+::ng-deep .p-rating .p-rating-icon {
+    transition: color 0.3s ease, transform 0.3s ease;
+
+}
+
+::ng-deep .p-rating .p-rating-item.p-rating-item-active .p-rating-icon {
+    color: #ffd700;
+    transform: scale(1.2);    
+}
+
+.rating-value {
+    font-size: 20px;
+    font-weight: bold;
+    color: #514b4b;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+    width: 100%;
+}
+
+.text-btn-card{
+    margin-top: 3px;
+}
+
+.mat-mdc-card-content {
+    padding: 0 16px 0 16px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.fundo{
+    width: 23%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f5f5fa;
+    border-radius: 20px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 10px;
+}

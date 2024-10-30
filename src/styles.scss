@@ -3,7 +3,7 @@
 @import "primeng/resources/primeng.css";
 @import 'primeng/resources/primeng.min.css';
 
-html, body { height: 100%; }
+html, body { height: 100%; width: 100%; }
 // html, body { height: 100%; }
 
 body { margin: 0;
@@ -11,6 +11,6 @@ body { margin: 0;
     "Helvetica Neue", 
     sans-serif;
     padding: 20px;
-    background-color: #f5f5fa !important;
+    background-color: #ebe3e3 !important;
     box-sizing: border-box;
 }

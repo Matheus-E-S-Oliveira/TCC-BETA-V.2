@@ -12,6 +12,18 @@ const routes: Routes = [
     loadChildren: () => import('./features/saude/saude.module').then(m => m.SaudeModule),
   },
   {
+    path: 'seguranca',
+    loadChildren: () => import('./features/seguranca/seguranca.module').then(m => m.SegurancaModule)
+  },
+  {
+    path: 'educacao',
+    loadChildren: () => import('./features/educacao/educacao.module').then(m => m.EducacaoModule)
+  },
+  {
+    path: 'infraestrutura',
+    loadChildren: () => import('./features/infraestrutura/infraestrutura.module').then(m => m.InfraestruturaModule)
+  },
+  {
     path: '**',
     redirectTo: 'home',
     pathMatch: 'full'
@@ -19,7 +31,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'top' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

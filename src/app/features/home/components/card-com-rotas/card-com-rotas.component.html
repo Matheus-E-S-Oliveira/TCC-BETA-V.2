@@ -1,0 +1,97 @@
+<div class="fundo">
+    <div class="card-custom">
+        <mat-card>
+            <mat-card-header>
+                <div mat-card-avatar class="cabecalho-image">
+                    <img class="cabecalho-image" src="assets/imgs/bandeira.jpg" alt="Bandeira">
+                </div>
+                <mat-card-title class="card-title">Avaliação dos serviços prestados na Saúde</mat-card-title>
+            </mat-card-header>
+            <br>
+            <mat-card-content>
+                <div class="rating-value">{{ value1 | number: '1.1-1' }}/5</div>
+                <p-rating [(ngModel)]="value1" [disabled]="true" [readonly]="true" [cancel]="false" [stars]="5">
+                </p-rating>
+            </mat-card-content>
+            <mat-card-actions>
+                <a routerLink="/saude" class="button-card">
+                    <span class="text-btn-card">Ver mais detalhes</span>
+                    <mat-icon>open_in_new</mat-icon>
+                </a>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>
+<div class="fundo">
+    <div class="card-custom">
+        <mat-card>
+            <mat-card-header>
+                <div mat-card-avatar class="cabecalho-image">
+                    <img class="cabecalho-image" src="assets/imgs/bandeira.jpg" alt="Bandeira">
+                </div>
+                <mat-card-title class="card-title">Avaliação dos serviços prestados em
+                    Infraestrutura</mat-card-title>
+            </mat-card-header>
+            <br>
+            <mat-card-content>
+                <div class="rating-value">{{ value2 | number: '1.1-1' }}/5</div>
+                <p-rating [(ngModel)]="value2" [disabled]="true" [readonly]="true" [cancel]="false" [stars]="5">
+                </p-rating>
+            </mat-card-content>
+            <mat-card-actions>
+                <a routerLink="/infraestrutura" class="button-card">
+                    <span class="text-btn-card">Ver mais detalhes</span>
+                    <mat-icon>open_in_new</mat-icon>
+                </a>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>
+<div class="fundo">
+    <div class="card-custom">
+        <mat-card>
+            <mat-card-header>
+                <div mat-card-avatar class="cabecalho-image">
+                    <img class="cabecalho-image" src="assets/imgs/bandeira.jpg" alt="Bandeira">
+                </div>
+                <mat-card-title class="card-title">Avaliação dos serviços prestados na Educação</mat-card-title>
+            </mat-card-header>
+            <br>
+            <mat-card-content>
+                <div class="rating-value">{{ value3 | number: '1.1-1' }}/5</div>
+                <p-rating [(ngModel)]="value3" [disabled]="true" [readonly]="true" [cancel]="false" [stars]="5">
+                </p-rating>
+            </mat-card-content>
+            <mat-card-actions>
+                <a routerLink="/educacao" class="button-card">
+                    <span class="text-btn-card">Ver mais detalhes</span>
+                    <mat-icon>open_in_new</mat-icon>
+                </a>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>
+<div class="fundo">
+    <div class="card-custom">
+        <mat-card>
+            <mat-card-header>
+                <div mat-card-avatar class="cabecalho-image">
+                    <img class="cabecalho-image" src="assets/imgs/bandeira.jpg" alt="Bandeira">
+                </div>
+                <mat-card-title class="card-title">Avaliação nos serviços prestados em Segurança</mat-card-title>
+            </mat-card-header>
+            <br>
+            <mat-card-content>
+                <div class="rating-value">{{ value4 | number: '1.1-1' }}/5</div>
+                <p-rating [(ngModel)]="value4" [disabled]="true" [readonly]="true" [cancel]="false" [stars]="5">
+                </p-rating>
+            </mat-card-content>
+            <mat-card-actions>
+                <a routerLink="/seguranca" class="button-card">
+                    <span class="text-btn-card">Ver mais detalhes</span>
+                    <mat-icon>open_in_new</mat-icon>
+                </a>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>

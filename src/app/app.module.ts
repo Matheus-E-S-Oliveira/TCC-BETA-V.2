@@ -8,6 +8,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { HomeModule } from './features/home/home.module';
 import { LayoutsModule } from './layouts/layouts.module';
 import { SaudeModule } from './features/saude/saude.module';
+import { InfraestruturaModule } from './features/infraestrutura/infraestrutura.module';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -23,7 +24,8 @@ import { AppComponent } from './app.component';
     HomeModule,
     LayoutsModule,
     SaudeModule,
-    RouterModule
+    InfraestruturaModule,
+    RouterModule,
   ],
   providers: [
     provideAnimationsAsync()
