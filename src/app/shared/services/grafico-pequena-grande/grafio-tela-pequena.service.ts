@@ -64,7 +64,7 @@ export class GraficoTelaPequenaService {
           display: true,
           text: 'Avaliação media dos serviços prestados',
           font: {
-            size: 13,
+            size: 15,
             weight: 'bold',
             family: 'Arial',
           },
