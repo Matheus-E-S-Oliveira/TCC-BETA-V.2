@@ -7,12 +7,17 @@
     margin-top: 3%;
 }
 
-.card-custom {
+.card-custom, .card-custom-b {
     width: 100%;
     padding: 9px;
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.card-custom-b{
+    border-radius: 20px;
     border-bottom-right-radius: 5px;
     border-top-left-radius: 5px;
 }
@@ -20,13 +25,13 @@
 /* Responsividade para telas menores */
 
 @media (max-width: 1031px) {
-    .fundo{
+    .fundo, .fundo-b{
         width: 48% !important;
     }
 
 }
 @media (max-width: 768px) {
-    .fundo{
+    .fundo, .fundo-b{
         width: 100% !important;
     }
 }
@@ -103,7 +108,7 @@ mat-card {
     justify-content: center;
     flex-wrap: wrap;
 }
-.fundo{
+.fundo, .fundo-b{
     width: 23%;
     display: flex;
     flex-wrap: wrap;
@@ -114,4 +119,9 @@ mat-card {
     border-bottom-right-radius: 5px;
     border-top-left-radius: 5px;
     padding: 10px;
+}
+.fundo{
+    border-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
 }

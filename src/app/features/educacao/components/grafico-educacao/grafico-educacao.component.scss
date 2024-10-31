@@ -53,7 +53,7 @@
 
 }
 .fundo{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 6%;
@@ -85,9 +85,6 @@
     border-top-right-radius: 5px;
 }
 @media (max-width: 1000px){
-    .fundo{
-        width: 100%;
-    }
     .fundo-btn,.fundo-btn-prox{
         width: 48%;
     }
