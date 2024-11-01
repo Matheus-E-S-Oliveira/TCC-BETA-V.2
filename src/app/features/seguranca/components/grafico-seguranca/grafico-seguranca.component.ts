@@ -70,6 +70,12 @@ export class GraficoSegurancaComponent {
       categorias: [
         { nome: 'Segurança', data: 3.4, backgroundColor: "rgba(0, 0, 255, 0.5)" },
       ]
+    },
+    {
+      mes: 'Novembro',
+      categorias: [
+        { nome: 'Segurança', data: 3.0, backgroundColor: "rgba(0, 0, 255, 0.5)" },
+      ]
     }]
   currentMonthIndex: number = 0;
   contMonth: number = 4;

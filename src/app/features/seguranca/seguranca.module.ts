@@ -13,6 +13,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { SegurancaRoutingModule } from './seguranca-routing.module';
 import { SegurancaDashboardComponent } from './components/seguranca-dashboard/seguranca-dashboard.component';
 import { GraficoSegurancaComponent } from './components/grafico-seguranca/grafico-seguranca.component';
+import { MatRadioModule } from '@angular/material/radio';
+import { FormularioComponent } from './components/formulario/formulario.component';
+import { ComponentsGoblaisModule } from "../../components-goblais/components-goblais.module";
 
 
 
@@ -20,6 +23,7 @@ import { GraficoSegurancaComponent } from './components/grafico-seguranca/grafic
   declarations: [
     SegurancaDashboardComponent,
     GraficoSegurancaComponent,
+    FormularioComponent,
   ],
   imports: [
     CommonModule,
@@ -30,7 +34,9 @@ import { GraficoSegurancaComponent } from './components/grafico-seguranca/grafic
     MatCardModule,
     MatIconModule,
     RouterModule,
-    ChartModule
-  ]
+    ChartModule,
+    MatRadioModule,
+    ComponentsGoblaisModule
+]
 })
 export class SegurancaModule { }

@@ -69,6 +69,12 @@ export class GraficoInfraestruturaComponent {
       categorias: [
         { nome: 'Infraestrutura', data: 2.9, backgroundColor: "rgba(255, 165, 0, 0.5)" }
       ]
+    },
+    {
+      mes: 'Novembro',
+      categorias: [
+        { nome: 'Infraestrutura', data: 5.0, backgroundColor: "rgba(255, 165, 0, 0.5)" }
+      ]
     }]
   currentMonthIndex: number = 0;
   contMonth: number = 4

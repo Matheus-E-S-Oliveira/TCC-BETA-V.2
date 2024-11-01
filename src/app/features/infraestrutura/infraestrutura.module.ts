@@ -12,14 +12,19 @@ import { MatButtonModule } from '@angular/material/button';
 
 import { InfraestruturaRoutingModule } from './infraestrutura-routing.module';
 
+import { FormularioComponent } from './components/formulario/formulario.component';
+import { ComponentsGoblaisModule } from "../../components-goblais/components-goblais.module";
 import { InfraestruturaDashboardComponent } from './components/infraestrutura-dashboard/infraestrutura-dashboard.component';
 import { GraficoInfraestruturaComponent } from './components/grafico-infraestrutura/grafico-infraestrutura.component';
+import { MatRadioModule } from '@angular/material/radio';
+
 
 
 @NgModule({
   declarations: [
     InfraestruturaDashboardComponent,
     GraficoInfraestruturaComponent,
+    FormularioComponent,
   ],
   imports: [
     CommonModule,
@@ -30,7 +35,9 @@ import { GraficoInfraestruturaComponent } from './components/grafico-infraestrut
     MatCardModule,
     MatIconModule,
     RouterModule,
-    ChartModule
-  ]
+    ChartModule,
+    ComponentsGoblaisModule,
+    MatRadioModule
+]
 })
 export class InfraestruturaModule { }

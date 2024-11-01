@@ -1,0 +1,139 @@
+<div class="body">
+    <div class="fundo">
+        <div class="container">
+            <article class="title">
+                <p>Por favor, classifique o serviço prestado na área de educação usando o sistema de estrelas abaixo. Cada estrela representa a sua
+                    experiência.</p>
+            </article>
+            <article class="cabecario">
+                <p>Escala de avaliação:</p>
+                <p>
+                    <mat-icon class="icon">star</mat-icon>
+                    <mat-icon class="icon">star_border</mat-icon>
+                    <mat-icon class="icon">star_border</mat-icon>
+                    <mat-icon class="icon">star_border</mat-icon>
+                    <mat-icon class="icon">star_border</mat-icon>
+                    <span>(1 estrela) - Péssimo</span>
+                </p>
+                <p class="text">
+                    • O serviço não atendeu às minhas expectativas de forma alguma.
+                </p>
+                <p>
+                    <mat-icon class="icon">star</mat-icon>
+                    <mat-icon class="icon">star</mat-icon>
+                    <mat-icon class="icon">star_border</mat-icon>
+                    <mat-icon class="icon">star_border</mat-icon>
+                    <mat-icon class="icon">star_border</mat-icon>
+                    <span>(2 estrelas) - Ruim</span>
+                </p>
+                <p class="text">
+                    • O serviço foi abaixo do esperado, com várias falhas.
+                </p>
+                <p>
+                    <mat-icon class="icon">star</mat-icon>
+                    <mat-icon class="icon">star</mat-icon>
+                    <mat-icon class="icon">star</mat-icon>
+                    <mat-icon class="icon">star_border</mat-icon>
+                    <mat-icon class="icon">star_border</mat-icon>
+                    <span>(3 estrelas) - Normal</span>
+                </p>
+                <p class="text">
+                    • O serviço atendeu às minhas necessidades, mas poderia ser melhor.
+                </p>
+                <p>
+                    <mat-icon class="icon">star</mat-icon>
+                    <mat-icon class="icon">star</mat-icon>
+                    <mat-icon class="icon">star</mat-icon>
+                    <mat-icon class="icon">star</mat-icon>
+                    <mat-icon class="icon">star_border</mat-icon>
+                    <span>(4 estrelas) - Bom</span>
+                </p>
+                <p class="text">
+                    • O serviço foi bom, com apenas pequenas áreas de melhoria.
+                </p>
+                <p>
+                    <mat-icon class="icon">star</mat-icon>
+                    <mat-icon class="icon">star</mat-icon>
+                    <mat-icon class="icon">star</mat-icon>
+                    <mat-icon class="icon">star</mat-icon>
+                    <mat-icon class="icon">star</mat-icon>
+                    <span>(5 estrelas) - Ótimo</span>
+                </p>
+                <p class="text">
+                    • O serviço superou minhas expectativas em todos os aspectos.
+                </p>
+            </article>
+            <p>N°1)-Em uma escala de 1 a 5, como você avaliaria a qualidade do ensino recebido pelos alunos?</p>
+            <article class="quest">
+                <article class="rating">
+                    <mat-radio-group aria-labelledby="example-radio-group-label" class="radio-group" [(ngModel)]="melu">
+                        @for (season of seasons; track season) {
+                        <mat-radio-button class="example-radio-button" [value]="melu"></mat-radio-button>
+                        }
+                    </mat-radio-group>
+                    <app-star></app-star>
+                </article>
+            </article>
+            <article class="quest">
+                <p>N°2)-Como você classificaria a infraestrutura da escola (salas de aula, bibliotecas, laboratórios, etc.)?</p>
+                <article class="rating">
+                    <mat-radio-group aria-labelledby="example-radio-group-label" class="radio-group"
+                        [(ngModel)]="favoriteSeason">
+                        @for (season of seasons; track season) {
+                        <mat-radio-button class="example-radio-button" [value]="season"></mat-radio-button>
+                        }
+                    </mat-radio-group>
+                    <app-star></app-star>
+                </article>
+            </article>
+            <article class="quest">
+                <p>N°3)-Em uma escala de 1 a 5, como você avaliaria o apoio oferecido aos alunos (tutoria, aconselhamento, etc.)?</p>
+                <article class="rating">
+                    <mat-radio-group aria-labelledby="example-radio-group-label" class="radio-group"
+                        [(ngModel)]="favoriteSeason">
+                        @for (season of seasons; track season) {
+                        <mat-radio-button class="example-radio-button" [value]="season"></mat-radio-button>
+                        }
+                    </mat-radio-group>
+                    <app-star></app-star>
+                </article>
+            </article>
+            <article class="quest">
+                <p>N°4)-Como você avaliaria a formação e a capacitação contínua dos professores? </p>
+                <article class="rating">
+                    <mat-radio-group aria-labelledby="example-radio-group-label" class="radio-group"
+                        [(ngModel)]="favoriteSeason">
+                        @for (season of seasons; track season) {
+                        <mat-radio-button class="example-radio-button" [value]="season"></mat-radio-button>
+                        }
+                    </mat-radio-group>
+                    <app-star></app-star>
+                </article>
+            </article>
+            <article class="quest">
+                <p>N°5)-De maneira geral, como você avaliaria sua experiência com os serviços educacionais oferecidos? </p>
+                <article class="rating">
+                    <mat-radio-group aria-labelledby="example-radio-group-label" class="radio-group"
+                        [(ngModel)]="favoriteSeason">
+                        @for (season of seasons; track season) {
+                        <mat-radio-button class="radio-button" [value]="season"></mat-radio-button>
+                        }
+                    </mat-radio-group>
+                    <app-star></app-star>
+                </article>
+            </article>
+        </div>
+    </div>
+    <div class="btn">
+        <div
+            style="background-color: #f5f5fa;
+            display: flex; 
+            justify-content: center; 
+            padding: 8px; 
+            border-radius: 12px; 
+            margin-bottom: 2vh;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+            <button class="btn-send" type="submit">Enviar</button>
+        </div>
+    </div>
+</div>

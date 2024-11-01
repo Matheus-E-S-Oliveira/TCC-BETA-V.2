@@ -13,6 +13,7 @@ import { InfraestruturaModule } from './features/infraestrutura/infraestrutura.m
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { ComponentsGoblaisModule } from './components-goblais/components-goblais.module';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { AppComponent } from './app.component';
     SaudeModule,
     InfraestruturaModule,
     RouterModule,
+    ComponentsGoblaisModule
   ],
   providers: [
     provideAnimationsAsync()

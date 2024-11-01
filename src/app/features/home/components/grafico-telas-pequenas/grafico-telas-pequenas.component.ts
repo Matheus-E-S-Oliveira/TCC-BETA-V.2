@@ -99,6 +99,15 @@ export class GraficoTelasPequenasComponent {
         { nome: 'Educação', data: 1.9, backgroundColor: "rgba(0, 255, 0, 0.5)" },
         { nome: 'Infraestrutura', data: 2.9, backgroundColor: "rgba(255, 165, 0, 0.5)" }
       ]
+    },
+    {
+      mes: 'Novembro',
+      categorias: [
+        { nome: 'Saude', data: 2.0, backgroundColor: "rgba(138, 43, 226, 0.5)" },
+        { nome: 'Segurança', data: 3.0, backgroundColor: "rgba(0, 0, 255, 0.5)" },
+        { nome: 'Educação', data: 4.0, backgroundColor: "rgba(0, 255, 0, 0.5)" },
+        { nome: 'Infraestrutura', data: 5.0, backgroundColor: "rgba(255, 165, 0, 0.5)" }
+      ]
     }]
   currentMonthIndex: number = 0;
   screenWidth: number = 700;

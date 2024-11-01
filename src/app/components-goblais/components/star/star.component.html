@@ -1,0 +1,5 @@
+<div class="container" *ngFor="let option of starOptions">
+    <mat-icon class="icon" *ngFor="let icon of option.stars" [ngClass]="icon">
+      {{ icon === 'star' ? 'star' : 'star_border' }}
+    </mat-icon>
+</div>

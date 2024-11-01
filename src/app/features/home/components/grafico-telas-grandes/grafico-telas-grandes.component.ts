@@ -99,21 +99,30 @@ export class GraficoTelasGrandesComponent {
         { nome: 'Educação', data: 1.9, backgroundColor: "rgba(0, 255, 0, 0.5)" },
         { nome: 'Infraestrutura', data: 2.9, backgroundColor: "rgba(255, 165, 0, 0.5)" }
       ]
+    },
+    {
+      mes: 'Novembro',
+      categorias: [
+        { nome: 'Saude', data: 2.0, backgroundColor: "rgba(138, 43, 226, 0.5)" },
+        { nome: 'Segurança', data: 3.0, backgroundColor: "rgba(0, 0, 255, 0.5)" },
+        { nome: 'Educação', data: 4.0, backgroundColor: "rgba(0, 255, 0, 0.5)" },
+        { nome: 'Infraestrutura', data: 5.0, backgroundColor: "rgba(255, 165, 0, 0.5)" }
+      ]
     }]
   currentMonthIndex: number = 0;
   contMonth: number = 6
   screenWidth: number = 1000;
   cdRef: any;
 
-  constructor(private graficoTelaGrandeService: GraficoTelaGrandeService){}
-  
+  constructor(private graficoTelaGrandeService: GraficoTelaGrandeService) { }
+
   ngOnInit() {
     this.updateChartData();
   }
   updateChartData() {
 
     this.data = this.graficoTelaGrandeService.formatData(this.avaliacao, this.currentMonthIndex)
-  
+
     this.options = this.graficoTelaGrandeService.formatOptions();
   }
   nextMonth() {

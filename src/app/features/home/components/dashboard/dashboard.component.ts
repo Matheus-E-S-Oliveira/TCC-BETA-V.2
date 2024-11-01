@@ -6,11 +6,7 @@ import { ChangeDetectorRef, Component, HostListener, Inject, PLATFORM_ID } from 
   styleUrl: './dashboard.component.scss'
 })
 export class DashboardComponent {
-  value = 1.4;
-  value1 = 0.2;
-  value2 = 2.5;
-  value3 = 1.0;
-  value4 = 2.0;
+
   totalVotes = 1000;
   isBrowser: boolean = false;
   activeItem!: null;
@@ -21,16 +17,16 @@ export class DashboardComponent {
     private cdRef: ChangeDetectorRef) { }
 
   ratings = [
-    { category: 'Saude', average: 0.2 },
-    { category: 'Educação', average: 2.5 },
-    { category: 'Infraestrutura', average: 1.0 },
-    { category: 'Segurança', average: 2.0 },
+    { category: 'Saude', average: 2.0 },
+    { category: 'Educação', average: 4.0 },
+    { category: 'Infraestrutura', average: 5.0 },
+    { category: 'Segurança', average: 3.0 },
   ];
 
   generalAverage: number = this.calculateGeneralAverage();
 
   circumference: number = 2 * Math.PI * 45;
-  offset: number = this.circumference - (this.value / 5) * this.circumference;
+  offset: number = this.circumference - (this.generalAverage / 5) * this.circumference;
   screenWidth!: number;
 
   calculateGeneralAverage(): number {

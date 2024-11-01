@@ -9,7 +9,7 @@
                         </div>
                         <mat-card-title style="text-align: left; font-size: 15px;">Ressaquinha MG</mat-card-title>
                         <mat-card-subtitle style="text-align: left; font-size: 13px;">Avaliação dos serviços prestados
-                            na infraestrutura</mat-card-subtitle>
+                            na educação</mat-card-subtitle>
                     </mat-card-header>
                     <mat-card-content>
                         <img class="img-custom" src="assets/imgs/escola.jpg" alt="Escola" />
@@ -30,7 +30,7 @@
                     </div>
                     <div class="rating-info">
                         <p class="rating-votes">{{ totalVotes }} Avalições</p>
-                        <p-rating [(ngModel)]="value" [readonly]="true" [disabled]="true" [cancel]="false"
+                        <p-rating [(ngModel)]="generalAverage" [readonly]="true" [disabled]="true" [cancel]="false"
                             [stars]="5"></p-rating>
                     </div>
                     <div class="rating-distribution">
@@ -43,6 +43,9 @@
                             </div>
                         </div>
                     </div>
+                    <a [routerLink]="['/educacao/formulario']" class="btn-link">
+                        <span>Inicar Avaliação</span>
+                    </a>
                 </div>
             </div>
         </div>

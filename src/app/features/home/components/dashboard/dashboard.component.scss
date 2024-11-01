@@ -94,10 +94,9 @@ mat-card {
 }
 
 ::ng-deep .p-rating .p-rating-item.p-rating-item-active .p-rating-icon {
-    color: #ffd700;
+    color: #89b5fa !important;
     transform: scale(1.2);    
 }
-
 
 .circle-background {
     fill: none;
@@ -107,7 +106,7 @@ mat-card {
 
 .circle-progress {
     fill: none;
-    stroke: #4caf50;
+    stroke: #89b5fa;
     stroke-width: 5;
     transform: rotate(-90deg);
     transform-origin: 50% 50%;
@@ -151,7 +150,7 @@ mat-card {
 
 /* A barra de progresso (cor preenchida) */
 .bar {
-    background-color: #4caf50;
+    background-color: #89b5fa;
     height: 100%;
     border-radius: 5px;
     transition: width 0.3s ease;

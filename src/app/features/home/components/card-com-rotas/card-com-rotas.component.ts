@@ -6,9 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './card-com-rotas.component.scss'
 })
 export class CardComRotasComponent {
-  value = 1.4;
-  value1 = 0.2;
-  value2 = 2.5;
-  value3 = 1.0;
-  value4 = 2.0;
+  value1 = 2.0;
+  value2 = 5.0;
+  value3 = 4.0;
+  value4 = 3.0;
 }

@@ -69,6 +69,12 @@ export class GraficoSaudeComponent {
       categorias: [
         { nome: 'Saude', data: 2.1, backgroundColor: "rgba(138, 43, 226, 0.5)" },
       ]
+    },
+    {
+      mes: 'Novembro',
+      categorias: [
+        { nome: 'Saude', data: 2.0, backgroundColor: "rgba(138, 43, 226, 0.5)" },
+      ]
     }]
   currentMonthIndex: number = 0;
   contMonth: number = 4;

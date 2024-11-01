@@ -30,19 +30,22 @@
                     </div>
                     <div class="rating-info">
                         <p class="rating-votes">{{ totalVotes }} Avalições</p>
-                        <p-rating [(ngModel)]="value" [readonly]="true" [disabled]="true" [cancel]="false"
+                        <p-rating [(ngModel)]="generalAverage" [readonly]="true" [disabled]="true" [cancel]="false"
                             [stars]="5"></p-rating>
                     </div>
                     <div class="rating-distribution">
                         <div class="rating-bar" *ngFor="let rating of ratings; let i = index">
                             <label>{{ rating.category }}</label>
-                            <div class="bar-value">{{ rating.average | number: '1.1-1' }}</div>
+                            <div class="bar-value">{{ generalAverage | number: '1.1-1' }}</div>
                             <div class="bar-container">
                                 <div class="bar" [style.width]="(rating.average / 5) * 100 + '%'">
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <a [routerLink]="['/infraestrutura/formulario']" class="btn-link">
+                        <span>Inicar Avaliação</span>
+                    </a>
                 </div>
             </div>
         </div>

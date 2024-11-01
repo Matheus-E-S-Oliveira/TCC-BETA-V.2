@@ -69,6 +69,12 @@ export class GraficoEducacaoComponent {
       categorias: [
         { nome: 'Educação', data: 1.9, backgroundColor: "rgba(0, 255, 0, 0.5)" },
       ]
+    },
+    {
+      mes: 'Novembro',
+      categorias: [
+        { nome: 'Educação', data: 4.0, backgroundColor: "rgba(0, 255, 0, 0.5)" },
+      ]
     }]
   currentMonthIndex: number = 0;
   screenWidth: number = 1000;
