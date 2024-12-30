@@ -20,6 +20,7 @@ export class SegurancaDashboardComponent {
     { category: 'Criterio 2#', average: 3.0 },
     { category: 'Criterio 3#', average: 3.0 },
     { category: 'criterio 4#', average: 3.0 },
+    { category: 'criterio 5#', average: 3.0 }
   ];
 
   generalAverage: number = this.calculateGeneralAverage();

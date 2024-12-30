@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogoEducacaoComponent } from '../dialogo-educacao/dialogo-educacao.component';
+import { formularioEducacaoModel } from './formulario.viewmodel';
+import { EducacaoResponse } from '../../../../core/api/endpoints/educacao/educacao.response';
 
 @Component({
   selector: 'app-formulario-educacao',
@@ -6,41 +10,30 @@ import { Component } from '@angular/core';
   styleUrl: './formulario.component.scss'
 })
 export class FormularioComponent {
-value = 0;
-value1 =  1;
-value2 =  2;
-value3 = 3;
-value4 =  4;
-value5 = 5;
-melu! :any;
-favoriteSeason: string = '';
-  seasons: string[] = ['Winter', 'Spring', 'Summer', 'Autumn', 'wtf'];
-starOptions = [
-  {
-    rating: 1,
-    stars: ['star', 'star_border', 'star_border', 'star_border', 'star_border']
-  },
-  {
-    rating: 2,
-    stars: ['star', 'star', 'star_border', 'star_border', 'star_border']
-  },
-  {
-    rating: 3,
-    stars: ['star', 'star', 'star', 'star_border', 'star_border']
-  },
-  {
-    rating: 4,
-    stars: ['star', 'star', 'star', 'star', 'star_border']
-  },
-  {
-    rating: 5,
-    stars: ['star', 'star', 'star', 'star', 'star']
-  }
-];
 
-imprimirEstrelas(){
-  this.starOptions.forEach(option => {
-    console.log(`Rating: ${option.rating}, Stars: ${option.stars.join(' ')}`);
-  });
-}
+  value1 = 0;
+  value2 = 0;
+  value3 = 0;
+  value4 = 0;
+  value5 = 0;
+
+  public formulario!: formularioEducacaoModel; 
+
+  constructor(public dialog: MatDialog) { }
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(DialogoEducacaoComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        // Lógica para enviar o formulário
+        console.log("Formulário enviado!");
+        console.log('submit chegou')
+      } else {
+        console.log("Envio cancelado.");
+      }
+    });
+  }
+  seasons: string[] = ['opação 1', 'opação 2', 'opção 3', 'opção 4', 'opção 5'];
+
 }

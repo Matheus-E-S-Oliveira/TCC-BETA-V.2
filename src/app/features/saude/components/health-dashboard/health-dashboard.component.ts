@@ -15,6 +15,7 @@ export class HealthDashboardComponent {
     { category: 'Criterio 2#', average: 2.0 },
     { category: 'Criterio 3#', average: 2.0 },
     { category: 'criterio 4#', average: 2.0 },
+    { category: 'criterio 5#', average: 2.0 }
   ];
 
   generalAverage: number = this.calculateGeneralAverage();

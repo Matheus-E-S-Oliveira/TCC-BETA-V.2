@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogoSaudeComponent } from '../dialogo-saude/dialogo-saude.component';
 
 @Component({
   selector: 'app-formulario-saude',
@@ -7,13 +9,25 @@ import { Component } from '@angular/core';
 })
 export class FormularioComponent {
 
-  value = 0;
-  value1 =  1;
-  value2 =  2;
-  value3 = 3;
-  value4 =  4;
-  value5 = 5;
-  melu! :any;
+  value1 =  0;
+  value2 =  0;
+  value3 =  0;
+  value4 =  0;
+  value5 =  0;
+  constructor(public dialog: MatDialog) {}
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(DialogoSaudeComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        // Lógica para enviar o formulário
+        console.log("Formulário enviado!");
+      } else {
+        console.log("Envio cancelado.");
+      }
+    });
+  }
   favoriteSeason: string = '';
     seasons: string[] = ['Winter', 'Spring', 'Summer', 'Autumn', 'wtf'];
   starOptions = [

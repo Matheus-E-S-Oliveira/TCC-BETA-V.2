@@ -1,5 +1,6 @@
+import { MatDialogModule } from '@angular/material/dialog';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
@@ -16,6 +17,7 @@ import { EducacaoDashboardComponent } from './components/educacao-dashboard/educ
 import { GraficoEducacaoComponent } from './components/grafico-educacao/grafico-educacao.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { ComponentsGoblaisModule } from "../../components-goblais/components-goblais.module";
+import { DialogoEducacaoComponent } from './components/dialogo-educacao/dialogo-educacao.component';
 
 
 @NgModule({
@@ -23,6 +25,7 @@ import { ComponentsGoblaisModule } from "../../components-goblais/components-gob
     EducacaoDashboardComponent,
     GraficoEducacaoComponent,
     FormularioComponent,
+    DialogoEducacaoComponent,
   ],
   imports: [
     CommonModule,
@@ -35,7 +38,9 @@ import { ComponentsGoblaisModule } from "../../components-goblais/components-gob
     RouterModule,
     ChartModule,
     ComponentsGoblaisModule,
-    MatRadioModule
+    MatRadioModule,
+    MatDialogModule,
+    ReactiveFormsModule,
 ]
 })
 export class EducacaoModule { }

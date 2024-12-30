@@ -66,9 +66,9 @@
             <p>N°1)-Em uma escala de 1 a 5, como você avaliaria a segurança geral da área onde você vive/trabalha?</p>
             <article class="quest">
                 <article class="rating">
-                    <mat-radio-group aria-labelledby="example-radio-group-label" class="radio-group" [(ngModel)]="melu">
+                    <mat-radio-group aria-labelledby="example-radio-group-label" class="radio-group" [(ngModel)]="value1">
                         @for (season of seasons; track season) {
-                        <mat-radio-button class="example-radio-button" [value]="melu"></mat-radio-button>
+                        <mat-radio-button class="example-radio-button" [value]= 1 ></mat-radio-button>
                         }
                     </mat-radio-group>
                     <app-star></app-star>
@@ -78,9 +78,9 @@
                 <p>N°2)-Como você classificaria a presença e a eficácia das forças de segurança (polícia, segurança privada) em sua área?</p>
                 <article class="rating">
                     <mat-radio-group aria-labelledby="example-radio-group-label" class="radio-group"
-                        [(ngModel)]="favoriteSeason">
+                        [(ngModel)]="value2">
                         @for (season of seasons; track season) {
-                        <mat-radio-button class="example-radio-button" [value]="season"></mat-radio-button>
+                        <mat-radio-button class="example-radio-button" [value]= 2 ></mat-radio-button>
                         }
                     </mat-radio-group>
                     <app-star></app-star>
@@ -90,9 +90,9 @@
                 <p>N°3)-Em uma escala de 1 a 5, como você avaliaria a iluminação pública e a visibilidade em áreas públicas à noite?</p>
                 <article class="rating">
                     <mat-radio-group aria-labelledby="example-radio-group-label" class="radio-group"
-                        [(ngModel)]="favoriteSeason">
+                        [(ngModel)]="value3">
                         @for (season of seasons; track season) {
-                        <mat-radio-button class="example-radio-button" [value]="season"></mat-radio-button>
+                        <mat-radio-button class="example-radio-button" [value]= 3 ></mat-radio-button>
                         }
                     </mat-radio-group>
                     <app-star></app-star>
@@ -102,9 +102,9 @@
                 <p>N°4)-Como você se sente em relação à sua segurança pessoal ao se deslocar pela área, especialmente à noite? </p>
                 <article class="rating">
                     <mat-radio-group aria-labelledby="example-radio-group-label" class="radio-group"
-                        [(ngModel)]="favoriteSeason">
+                        [(ngModel)]="value4">
                         @for (season of seasons; track season) {
-                        <mat-radio-button class="example-radio-button" [value]="season"></mat-radio-button>
+                        <mat-radio-button class="example-radio-button" [value]= 4 ></mat-radio-button>
                         }
                     </mat-radio-group>
                     <app-star></app-star>
@@ -114,9 +114,9 @@
                 <p>N°5)-Em sua opinião, como você avaliaria a rapidez e eficácia das respostas a incidentes de segurança (como crimes ou emergências) na sua comunidade?</p>
                 <article class="rating">
                     <mat-radio-group aria-labelledby="example-radio-group-label" class="radio-group"
-                        [(ngModel)]="favoriteSeason">
+                        [(ngModel)]="value5">
                         @for (season of seasons; track season) {
-                        <mat-radio-button class="radio-button" [value]="season"></mat-radio-button>
+                        <mat-radio-button class="radio-button" [value]= 5 ></mat-radio-button>
                         }
                     </mat-radio-group>
                     <app-star></app-star>
@@ -133,7 +133,7 @@
             border-radius: 12px; 
             margin-bottom: 2vh;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-            <button class="btn-send" type="submit">Enviar</button>
+            <button class="btn-send" type="submit" (click)="openDialog()">Enviar</button>
         </div>
     </div>
 </div>

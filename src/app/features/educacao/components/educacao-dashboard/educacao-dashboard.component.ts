@@ -14,10 +14,11 @@ export class EducacaoDashboardComponent {
   currentMonthIndex: number = 0;
   
   ratings = [
-    { category: 'Criterio 1#', average: 4.0},
+    { category: 'Criterio 1#', average: 4.0 },
     { category: 'Criterio 2#', average: 4.0 },
     { category: 'Criterio 3#', average: 4.0 },
     { category: 'criterio 4#', average: 4.0 },
+    { category: 'criterio 5#', average: 4.0 }
   ];
 
   generalAverage: number = this.calculateGeneralAverage();

@@ -17,6 +17,8 @@ import { HealthDashboardComponent } from './components/health-dashboard/health-d
 import { GraficoSaudeComponent } from './components/grafico-saude/grafico-saude.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { ComponentsGoblaisModule } from "../../components-goblais/components-goblais.module";
+import { DialogoSaudeComponent } from './components/dialogo-saude/dialogo-saude.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
@@ -24,6 +26,7 @@ import { ComponentsGoblaisModule } from "../../components-goblais/components-gob
     HealthDashboardComponent,
     GraficoSaudeComponent,
     FormularioComponent,
+    DialogoSaudeComponent,
   ],
   imports: [
     CommonModule,
@@ -36,7 +39,8 @@ import { ComponentsGoblaisModule } from "../../components-goblais/components-gob
     RouterModule,
     ChartModule,
     MatRadioModule,
-    ComponentsGoblaisModule
+    ComponentsGoblaisModule,
+    MatDialogModule
 ]
 })
 export class SaudeModule { }

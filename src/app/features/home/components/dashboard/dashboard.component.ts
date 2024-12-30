@@ -26,7 +26,7 @@ export class DashboardComponent {
   generalAverage: number = this.calculateGeneralAverage();
 
   circumference: number = 2 * Math.PI * 45;
-  offset: number = this.circumference - (this.generalAverage / 5) * this.circumference;
+  offset: number = this.circumference - (this.generalAverage / 4) * this.circumference;
   screenWidth!: number;
 
   calculateGeneralAverage(): number {

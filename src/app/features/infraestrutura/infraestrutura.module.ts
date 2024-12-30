@@ -1,3 +1,4 @@
+import { MatDialogModule } from '@angular/material/dialog';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
@@ -17,6 +18,7 @@ import { ComponentsGoblaisModule } from "../../components-goblais/components-gob
 import { InfraestruturaDashboardComponent } from './components/infraestrutura-dashboard/infraestrutura-dashboard.component';
 import { GraficoInfraestruturaComponent } from './components/grafico-infraestrutura/grafico-infraestrutura.component';
 import { MatRadioModule } from '@angular/material/radio';
+import { DialogoInfraestruturaComponent } from './components/dialogo-infraestrutura/dialogo-infraestrutura.component';
 
 
 
@@ -25,6 +27,7 @@ import { MatRadioModule } from '@angular/material/radio';
     InfraestruturaDashboardComponent,
     GraficoInfraestruturaComponent,
     FormularioComponent,
+    DialogoInfraestruturaComponent,
   ],
   imports: [
     CommonModule,
@@ -37,7 +40,8 @@ import { MatRadioModule } from '@angular/material/radio';
     RouterModule,
     ChartModule,
     ComponentsGoblaisModule,
-    MatRadioModule
+    MatRadioModule,
+    MatDialogModule
 ]
 })
 export class InfraestruturaModule { }
